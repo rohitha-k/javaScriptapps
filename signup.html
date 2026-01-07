@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGN UP PAGE</title>
+    <script src="validate.js"></script>
+  </head>
+  <body>
+    <h2>Please signup here!</h2>
+    <form action="success.html" onsubmit="return validate()">
+      <label> Enter Username: </label>
+      <input type="text" name="username" id="usernamee" />
+      <br />
+      <br />
+      <label> Enter Password: </label>
+      <input type="password" name="password" id="pswd" />
+      <br />
+      <br />
+      <label> Confirm Password: </label>
+      <input type="password" name="password" id="cnfrmpswd" />
+      <br />
+      <br />
+      <label> Mobile Number: </label>
+      <input type="tel" name="" id="phnno" />
+      <br />
+      <br />
+      <label>Email:</label>
+      <input type="email" name="" id="mailid" />
+      <br />
+      <br />
+      <label>Select Gender:</label>
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female
+      <br />
+      <br />
+      <label>Enter DOB:</label>
+      <input type="date" id="dob" />
+      <br />
+      <br />
+      <label>Enter Address:</label>
+      <textarea id="address" rows="4"></textarea>
+      <br />
+      <br />
+      <label>Select Qualification:</label>
+
+      <select id="qualification">
+        <option value="">Select</option>
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>MCA</option>
+        <option>B.Sc</option>
+      </select>
+      <br />
+      <br />
+      <label>Choose your Skills:</label>
+
+      <select id="skills" multiple>
+        <option>Java</option>
+        <option>HTML5</option>
+        <option>CSS3</option>
+        <option>JavaScript</option>
+      </select>
+      <br />
+      <br />
+      <label>Preferred Shift:</label>
+
+      <input type="checkbox" name="shift" /> DayShift
+      <input type="checkbox" name="shift" /> NightShift
+      <input type="checkbox" name="shift" /> Day/Night
+      <br />
+      <br />
+      <label>Upload your Resume:</label>
+      <input type="file" id="resume" />
+      <br />
+      <br />
+
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
